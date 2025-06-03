@@ -5,7 +5,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 1000px;  /* 增加最大宽度以容纳三张图片 */
             margin: 0 auto;
             padding: 20px;
             text-align: center;
@@ -18,9 +18,11 @@
         .image-box {
             margin: 10px;
             text-align: center;
+            flex: 1;  /* 使每个图片盒子平均分配空间 */
+            min-width: 250px;  /* 设置最小宽度防止过小 */
         }
         img {
-            max-width: 300px;
+            max-width: 100%;  /* 图片宽度适应容器 */
             height: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -37,6 +39,10 @@
         <div class="image-box">
             <img src="Gephi.png" alt="Gephi图表">
             <p>银临歌曲Gephi图表</p>
+        </div>
+        <div class="image-box">
+            <img src="qinggan.png" alt="情感分析图">
+            <p>银临歌曲情感分析</p>
         </div>
     </div>
 </body>
